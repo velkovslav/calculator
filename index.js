@@ -1,9 +1,16 @@
-var keycaps = document.querySelectorAll(".keycap");
-var numberOfKeycaps = keycaps.length;
+// Type of Keycaps
+var numberKeycaps = document.querySelectorAll(".number-keycap");
+var totalAmountOfNumberKeycaps = numberKeycaps.length;
 
-for (i=0;i<=numberOfKeycaps;i++) {
-    keycaps[i].addEventListener('click', function() {
-        buttonNumber = this.innerHTML;
-        console.log(buttonNumber);
+
+var array = [];
+
+// Add event listeners to all of the Number Keycaps
+for (i=0;i<=totalAmountOfNumberKeycaps;i++) {
+    numberKeycaps[i].addEventListener('click', function() {
+        buttonValue = this.innerHTML;
+        array.push(buttonValue);
+        document.getElementById("screen").innerHTML = array.join("")      
     })
 }
+

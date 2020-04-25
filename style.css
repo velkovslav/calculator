@@ -20,7 +20,7 @@ section.container {
     border:1px solid rgb(37, 37, 37);
 }
 
-#calculator .keys {
+#calculator #numbersKeyboard {
     width: 20%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -28,7 +28,7 @@ section.container {
     row-gap: 20px;
 }
 
-#calculator .keys .keycap {
+#calculator #numbersKeyboard .number-keycap {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -37,7 +37,7 @@ section.container {
     border-radius: 10px;
 }
 
-#calculator .keys #zero.keycap {
+#calculator #numbersKeyboard #zero.number-keycap {
     grid-row-end: 5;
     grid-column-start: 2;
 }
